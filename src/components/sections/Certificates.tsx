@@ -29,7 +29,7 @@ const certificates = [
   },
   {
     title: "CS50: Introduction to Programming with Python",
-    image: "/certificates/cs50P.png",
+    image: "/certificates/CS50P.png",
     link: "https://certificates.cs50.io/f81036d0-6d0c-4465-9c34-8dc92beedc3d.png?size=letter"
   }
 ];
