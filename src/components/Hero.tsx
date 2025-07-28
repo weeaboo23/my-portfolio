@@ -11,13 +11,13 @@ export default function Hero() {
           A passionate developer building modern full-stack apps with Python, JavaScript, and AI.
         </p>
         <div className="space-x-4">
-          <Button className="text-lg px-6 py-4" onClick={() => window.location.href = "/Projects"}>
+          <Button className="text-lg px-6 py-4" onClick={() => window.scrollTo(0, 600)}>
             View Projects
           </Button>
           <Button variant="outline" className="text-lg px-6 py-4" onClick={() => window.open("/Ankit_Kashyap_Resume.pdf", "_blank")}>
             Download Resume
           </Button>
-          <Button className="text-lg px-6 py-4" onClick={() =>window.location.href = "/Certificates"}>
+          <Button className="text-lg px-6 py-4" onClick={() => window.scrollTo(0, 2100)}>
             View Certificates
           </Button>
         </div>
