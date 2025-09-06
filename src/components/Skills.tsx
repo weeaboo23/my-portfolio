@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPython, FaReact, FaGitAlt, FaNodeJs, FaLinux } from "react-icons/fa";
 import { SiDjango, SiTailwindcss, SiPostgresql, SiSqlite, SiJavascript } from "react-icons/si";
+import { SiTensorflow, SiPytorch } from "react-icons/si";
 
 const skills = [
   { icon: <FaPython size={40} />, name: "Python" },
@@ -13,8 +14,9 @@ const skills = [
   { icon: <FaGitAlt size={40} />, name: "Git" },
   { icon: <FaNodeJs size={40} />, name: "Node.js" },
   { icon: <FaLinux size={40} />, name: "Linux" },
-  { icon: <FaLinux size={40} />, name: "AI" },
-  { icon: <FaLinux size={40} />, name: "Machine Learning" },
+  { icon: <FaBrain size={40} />, name: "AI" },
+  { icon: <SiTensorflow size={40} />, name: "Machine Learning" },
+  { icon: <SiPytorch size={40} />, name: "PyTorch" },
 ];
 
 const Skills = () => {
