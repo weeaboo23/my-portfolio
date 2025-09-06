@@ -13,6 +13,8 @@ const skills = [
   { icon: <FaGitAlt size={40} />, name: "Git" },
   { icon: <FaNodeJs size={40} />, name: "Node.js" },
   { icon: <FaLinux size={40} />, name: "Linux" },
+  { icon: <FaLinux size={40} />, name: "AI" },
+  { icon: <FaLinux size={40} />, name: "Machine Learning" },
 ];
 
 const Skills = () => {

@@ -32,6 +32,11 @@ const certificates = [
     image: "/certificates/CS50P.png",
     link: "https://certificates.cs50.io/f81036d0-6d0c-4465-9c34-8dc92beedc3d.png?size=letter"
   }
+  {
+    title: "CS50: Introduction to Artificial Intelligence with Python",
+    image: "/certificates/CS50AI.png",
+    link: "https://certificates.cs50.io/432e8cb2-947c-43ba-90ba-9b0eef68a549.pdf?size=letter"
+  }
 ];
 
 const Certificates = () => {
