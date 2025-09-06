@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPython, FaReact, FaGitAlt, FaNodeJs, FaLinux } from "react-icons/fa";
+import { FaPython, FaReact, FaGitAlt, FaNodeJs, FaLinux, FaBrain } from "react-icons/fa";
 import { SiDjango, SiTailwindcss, SiPostgresql, SiSqlite, SiJavascript } from "react-icons/si";
 import { SiTensorflow, SiPytorch } from "react-icons/si";
 
