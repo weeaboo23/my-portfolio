@@ -33,42 +33,64 @@ const projects = [
     link: "https://github.com/weeaboo23/beyondcareer_Assignment",
   },
   {
-  title: "E-Commerce Listing Page",
-  description: "A fully responsive Next.js + TypeScript + Tailwind CSS project that showcases a modern product listing layout with sidebar, advertisement banner, pagination, and reusable components.",
-  tech: "Next.js, TypeScript, React, Tailwind CSS",
-  link: "https://github.com/weeaboo23/Ecommerce-listingPage",
-  demo: "https://ecommerce-listing-page.vercel.app",
-},
-{
-  title: "Book Finder",
-  description: "A minimalist React + Vite application that allows users to search for books by title or author using the Open Library API, with a clean Tailwind CSS interface.",
-  tech: "React.js, Vite, Tailwind CSS, Open Library API",
-  link: "https://github.com/weeaboo23/Book-Finder",
-  demo: "https://9qs6k9-5173.csb.app/",
-},
-
-
+    title: "E-Commerce Listing Page",
+    description: "A fully responsive Next.js + TypeScript + Tailwind CSS project that showcases a modern product listing layout with sidebar, advertisement banner, pagination, and reusable components.",
+    tech: "Next.js, TypeScript, React, Tailwind CSS",
+    link: "https://github.com/weeaboo23/Ecommerce-listingPage",
+    demo: "https://ecommerce-listing-page.vercel.app",
+  },
+  {
+    title: "Book Finder",
+    description: "A minimalist React + Vite application that allows users to search for books by title or author using the Open Library API, with a clean Tailwind CSS interface.",
+    tech: "React.js, Vite, Tailwind CSS, Open Library API",
+    link: "https://github.com/weeaboo23/Book-Finder",
+    demo: "https://9qs6k9-5173.csb.app/",
+  },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 px-4 bg-white dark:bg-gray-950 text-black dark:text-white">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">Projects</h2>
+    <section
+      id="projects"
+      className="py-16 px-4 bg-white dark:bg-gray-950 text-black dark:text-white"
+    >
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
+        Projects
+      </h2>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          <Card key={index} className="bg-gray-100 dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+          <Card
+            key={index}
+            className="bg-gray-100 dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300"
+          >
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">{project.description}</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">{project.tech}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
-              >
-                View on GitHub →
-              </a>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+                {project.description}
+              </p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
+                {project.tech}
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  GitHub →
+                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 dark:text-green-400 font-medium hover:underline"
+                  >
+                    Live Demo →
+                  </a>
+                )}
+              </div>
             </CardContent>
           </Card>
         ))}
