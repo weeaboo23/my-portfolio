@@ -32,6 +32,20 @@ const projects = [
     tech: "React.js, Tailwind CSS, Formspree (contact form), deployed on Vercel.",
     link: "https://github.com/weeaboo23/beyondcareer_Assignment",
   },
+  {
+  title: "E-Commerce Listing Page",
+  description: "A fully responsive Next.js + TypeScript + Tailwind CSS project that showcases a modern product listing layout with sidebar, advertisement banner, pagination, and reusable components.",
+  tech: "Next.js, TypeScript, React, Tailwind CSS",
+  link: "https://github.com/weeaboo23/Ecommerce-listingPage",
+  demo: "https://ecommerce-listing-page.vercel.app",
+},
+{
+  title: "Book Finder",
+  description: "A minimalist React + Vite application that allows users to search for books by title or author using the Open Library API, with a clean Tailwind CSS interface.",
+  tech: "React.js, Vite, Tailwind CSS, Open Library API",
+  link: "https://github.com/weeaboo23/Book-Finder",
+  demo: "https://9qs6k9-5173.csb.app/",
+},
 
 
 ];
